@@ -2,11 +2,11 @@
 
 
 
-# 🍹 NEON NECTARThis template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍹 NEON NECTAR
 
 
 
-### *Premium Cocktail Experience | Where Art Meets Mixology*Currently, two official plugins are available:
+### *Premium Cocktail Experience | Where Art Meets Mixology
 
 
 
