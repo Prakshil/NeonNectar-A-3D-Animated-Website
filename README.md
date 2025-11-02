@@ -9,7 +9,7 @@
 ### *Premium Cocktail Experience | Where Art Meets Mixology
 
 
-<img src="public/neon-nectar-logo.svg" alt="Neon Nectar Logo" width="200"/>- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) 
+<img src="public/neon-nectar-logo.svg" alt="Neon Nectar Logo" width="200"/>
 
 ## ✨ Overview
 
