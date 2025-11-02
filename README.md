@@ -1,4 +1,4 @@
-<div align="center"># React + Vite
+<div align="center">
 
 
 
