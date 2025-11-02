@@ -1,0 +1,73 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f1e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="neonGlow" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" style="stop-color:#e7d393;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6ec7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Cocktail Glass -->
+  <g filter="url(#glow)">
+    <!-- Glass stem -->
+    <rect x="246" y="320" width="20" height="80" fill="url(#neonGlow)" opacity="0.9"/>
+    <ellipse cx="256" cy="400" rx="35" ry="8" fill="url(#neonGlow)" opacity="0.9"/>
+    
+    <!-- Martini Glass -->
+    <path d="M 180 180 L 256 320 L 332 180 Z" fill="none" stroke="url(#neonGlow)" stroke-width="6" opacity="0.8"/>
+    <line x1="180" y1="180" x2="332" y2="180" stroke="url(#neonGlow)" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Liquid inside glass -->
+    <path d="M 200 200 L 256 300 L 312 200 Z" fill="#ff6ec7" opacity="0.3"/>
+    
+    <!-- Bubbles/Sparkles -->
+    <circle cx="230" cy="240" r="4" fill="#00f0ff" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="260" r="3" fill="#e7d393" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="220" r="5" fill="#ff6ec7" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Decorative Elements - Lemon Slice -->
+  <g filter="url(#glow)" transform="translate(310, 150) rotate(25)">
+    <circle cx="0" cy="0" r="25" fill="#e7d393" opacity="0.6"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#fff" stroke-width="1" opacity="0.4"/>
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#fff" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="-15" x2="0" y2="15" stroke="#fff" stroke-width="1" opacity="0.4"/>
+  </g>
+  
+  <!-- Letter N (stylized) -->
+  <g filter="url(#glow)">
+    <path d="M 140 120 L 140 90 L 160 90 L 160 120 L 180 90 L 200 90 L 200 120 L 180 120 L 180 100" 
+          fill="none" stroke="url(#neonGlow)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Letter N in bottom right -->
+  <text x="380" y="460" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="url(#neonGlow)" opacity="0.3">N</text>
+  
+  <!-- Shine effect -->
+  <path d="M 100 100 Q 150 150 200 100" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.2" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3s" repeatCount="indefinite"/>
+  </path>
+</svg>
